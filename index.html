@@ -6,19 +6,19 @@
     <a name="top-of-page" />
   </head>
   <body>
-    <h1>Toast</h1>
-    <h2>A Warm Crunchy Slice of Heaven</h2>
-      <ul>
-        <li><a href="Description">Bread Perfected: Description and History</a> </li>
-        <li><a href="Slicing">Ingredients</a></li>
-        <li><a href="Cooking">Proper Temperature Control</a></li>
-        <li><a href="Topping">Toppings, Sealing Your Fate</a></li>
-      </ul>
-      <a name="Description" />
-      <h2>Bread Perfected: Description and History</h2>
-        <p>Since the dawn of Western Civilization, bread has been an essential part of everyday life. In toast its reaches its culmination.</p>
-        <a href="https://en.wikipedia.org/wiki/Toast">Toast Wiki</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Toast-2.jpg" alt="Damn Big Toast" style="width:400px;height:400px;"/>
+    <header>
+      <img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/4/appacademy_logo.png" alt="App Academy" style="width:150px;height:130px;"/>
+      <nav>
+        <ul>
+          <li><a href="Description">Bread Perfected: Description and History</a> </li>
+          <li><a href="Slicing">Ingredients</a></li>
+          <li><a href="Cooking">Proper Temperature Control</a></li>
+          <li><a href="Topping">Toppings, Sealing Your Fate</a></li>
+        </ul>
+      </nav>
+      <a name="Slicing" />
+
+    <aside>
       <a name="Slicing" />
       <h2>Ingredients</h2>
         <ul>
@@ -29,18 +29,78 @@
           <li>glass of milk</li>
         </ul>
       <a name="Cooking" />
+    </aside>
+
+    <section>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Toast-2.jpg" alt="Damn Big Toast" style="width:400px;height:400px;"/>
+      </figure>
+      <figcaption>
+        <a href="https://en.wikipedia.org/wiki/Toast">Toast Wiki</a>
+      </figcaption>
+      <!-- <h1>Toast</h1> -->
+    </header>
+      <h1>Toast</h1>
+      <h2>A Warm Crunchy Slice of Heaven</h2>
+
+      <a name="Description" />
+      <h2>Bread Perfected: Description and History</h2>
+        <p>Since the dawn of Western Civilization, bread has been an essential part of everyday life. In toast its reaches its culmination.</p>
       <h2>Cooking Your Toast: Proper Temperature Control</h2>
         <ol>
-          <li>slice bread</li>
-          <li>put into toaster</li>
-          <li>cook for a maximum of 3 minutes</li>
-          <li>spread liberally with butter</li>
-          <li>add additional toppings(butter is required first because it needs the proper heat to melt properly)</li>
-          <li>enjoy toast with a glass of milk or a mimosa</li>
+          <li>Slice bread</li>
+          <li>Put into toaster</li>
+          <li>Cook for a maximum of 3 minutes</li>
+          <li>Spread liberally with butter</li>
+          <li>Add additional toppings(butter is required first because it needs the proper heat to melt properly)</li>
+          <li>Enjoy toast with a glass of milk or a mimosa</li>
         </ol>
         <a name="Topping" />
         <h2>Toppings: Sealing Your Fate</h2>
         <p>The possiblities of bread are only limited by your imagination. Use good quality toppings and the sky's the limit</p>
+    </section>
+
+    <section>
+      <h3>Leave a Review<h3>
+
+      <form action"/reviews" method="post">
+        <label for="reviewer">Name</label>
+        <input id = "reviewer" type="text" value="">
+
+      <br>
+
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1" checked>
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5">
+
+      <br>
+
+        <label for="cooking expertise">Cooking Expertise</label>
+        <select name="cooking expertise">
+          <option disabled selected>Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Cook">Professional Cook</option>
+        </select>
+
+      <br><br>
+
+        <label for="Review">Review</label>
+        <textarea name="Review"></textarea>
+
+        <input type="submit" value="Add review to recipe">
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Recipe by Sloq
         <a href="#top-of-page">Back to top</a>
+      </p>
+    </footer>
   </body>
 </html>
