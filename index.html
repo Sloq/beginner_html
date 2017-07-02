@@ -5,9 +5,9 @@
 
     <meta name = "description" content="The best recipe for toast, turn bread into a delicious snack" charset="utf-8">
 
-    <script type="text/javascript" src="/external_javascript.js"></script>
+    <script type="text/javascript" src="external_javascript.js"></script>
 
-    <link rel="stylesheet" href="/css_stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css_stylesheet.css" type="text/css">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -79,11 +79,11 @@
 
     <section id="reviews">
 
-      <h3>Leave a Review<h3>
+      <h2>Reviews<h2>
 
       <form action"/reviews" method="post" id="review-form">
-        <label for="reviewer">Name</label>
-        <input id = "reviewer" type="text" value="">
+        <label for="name">Name</label>
+        <input id ="name" type="text" name="name">
 
       <br>
 
@@ -96,9 +96,9 @@
 
       <br>
 
-        <label for="cooking expertise">Cooking Expertise</label>
-        <select name="cooking expertise">
-          <option disabled selected>Select Cooking Expertise</option>
+        <label for="expertise">Cooking Expertise</label>
+        <select id="expertise" name="expertise">
+          <option disabled="true" selected="true">Select Cooking Expertise</option>
           <option value="Sometimes Cook">Sometimes Cook</option>
           <option value="Cook Everyday">Cook Everyday</option>
           <option value="Cooking is a Hobby">Cooking is a Hobby</option>
@@ -107,10 +107,11 @@
 
       <br><br>
 
-        <label for="Review">Review</label>
-        <textarea name="Review"></textarea>
+        <label for="Review">Review
+        <textarea id="review" name="review"></textarea>
+        </label>
 
-        <input type="submit" value="Add review to recipe">
+        <input type="submit" value="Submit Review">
       </form>
     </section>
 

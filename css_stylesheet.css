@@ -1,6 +1,44 @@
+html, body, a, header, nav, h1, h2, ul, li, section, form,
+p, footer, input {
+  margin: inherit;
+  border: inherit;
+  padding: inherit;
+
+  font: inherit;
+}
+
+input {
+  cursor: pointer;
+  outline: none;
+}
+
+form:last-child:hover {
+  -webkit-filter: brightness(90%);
+}
+
+ol li:nth-of-type(2n) {
+  background-color: LightGrey;
+}
+
+h2 + .user_review {
+  border-top: 1px, solid, black;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url("stars.png");
+  vertical-align: bottom;
+}
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+  background-image: url("stars.png");
+}
 
 body {
-  font-family: "Arial, sans-serif";
+  font-family: Arial, sans-serif;
+  margin: 10px;
 }
 
 h1 {
@@ -12,11 +50,11 @@ h2 {
 }
 
 .ingredients-list {
-  list-style: "square-inside"
+  list-style: square inside;
 }
 
 ul {
-  list-style: "armenian-inside"
+  list-style: armenian inside;
 }
 
 header > img {
@@ -29,7 +67,7 @@ ul li anchor {
 }
 
 * {
-  background-color: "smokeGrey";
+  background-color: whitesmoke;
 }
 
 .user_review {
