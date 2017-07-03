@@ -62,7 +62,7 @@ input[type="radio"]:checked {
 body {
   font-family: Arial, sans-serif;
   margin: 0 auto;
-  width: 900px;
+  width: 100%;
 }
 
 h1 {
@@ -74,43 +74,73 @@ h2 {
 }
 
 nav {
-  display: inline-block;
+  float: right;
 }
 
-nav ul li {
-  display: inline-block;
-  padding: 20px;
-}
 
 aside {
-  width: 180px;
+  width: 30.33%;
   margin-right: 15px;
-  display: inline-block;
+  float: left;
+  /*order: 2;*/
+  box-sizing: border-box;
 }
 
-section {
-  width: 700px;
-  display: inline-block;
+section.description {
+  width: 60.66%;
+  float: left;
+  order: 3;
+}
+
+img {
+  /*content: "";
+  display: block;
+  clear: both;*/
+  width: 100%;
 }
 
 .ingredients-list {
   list-style: square inside;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+header {
+  float: left;
+  width: 100%;
+  /*order: 1;*/
+}
+
+footer {
+  float: left;
+  order: 5;
+  width: 100%;
+}
+
+section.reviews {
+  float:left;
+  order: 4;
+  width: 100%;
+}
+
+header > img {
+  /*content: "";*/
+  /*clear: both;*/
+  width: 100%;
+  float: left;
 }
 
 ul {
   list-style: armenian inside;
 }
 
-header > img {
-  display: inline;
-  width: 100px;
-}
-
-ul li anchor {
+ul li {
   text-decoration: none;
   color: inherit;
+  float: right;
+  padding-left: 10px;
+
 }
 
 * {
@@ -120,3 +150,23 @@ ul li anchor {
 .user_review {
   font-style: italic;
 }
+
+/*@media all and (min_width: 500px) {
+  header {
+    flex: 1;
+    order: 1;
+  }
+  aside {
+    flex: 1;
+    order: 2;
+  }
+
+  section.reviews {
+    flex: 1;
+    order: 3;
+  }
+
+  footer {
+    order: 4;
+  }
+}*/
